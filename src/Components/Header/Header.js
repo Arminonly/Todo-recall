@@ -1,9 +1,14 @@
 import React from 'react';
-    
-    export default function Header(){
-            return (
-            <div>
-                <h1>Todo List</h1>
-            </div>
-        );
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import s from './Header.module.css';
+
+export default function Header() {
+  return (
+    <Row>
+      <Col>
+        {' '}<div className={s.root}>Todo List</div>
+      </Col>
+    </Row>
+  );
 }
